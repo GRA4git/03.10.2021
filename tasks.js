@@ -223,3 +223,7 @@ console.log(removeAddresses(users, 1))
 //getUsersGeo(array, id) - функция принимает массив и id пользователя и выводит в консоль его ключ geo
 const getUsersGeo = (array, id) => array.find(element => element.id === id).address.geo
 console.log(getUsersGeo(users,1))
+
+/*getUsersCompany(array, id)  — функция принимает массив и id пользователя, и выводит в консоль всю информацию (весь объект) о компании этого пользователя*/
+const getUsersCompany = (array, id) => array.find(element => element.id === id)
+console.log(getUsersCompany(users, 1))

@@ -205,7 +205,12 @@ const users = [
 const getAllNames = array => array.map(element => console.log(element.name))
 getAllNames(users)
 
-// getUserById(array, id) - функция принимает массив и id пользователя, и выводит в консоль всю информацию (весь объект) об этом пользователе
+/* getUserById(array, id) - функция принимает массив и id пользователя, и выводит в консоль всю информацию (весь объект) об этом пользователе*/
 
 const getUserById = (array, id) => array.find( element => element.id === id)
  console.log(getUserById(users, 2))
+
+/* removeAddresses(array) — функция принимает массив и возвращает новый массив в котором у всех пользователей пропадет поле address*/
+
+const removeAddresses = array => array.filter(element => delete element.address)
+console.log(removeAddresses(users))

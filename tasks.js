@@ -202,5 +202,10 @@ const users = [
  ];
 // getAllNames(array) - функция принимает массив и выводит в консоль все имена пользователей
 
-const getAllNames = array => array.map(item => console.log(item.name))
+const getAllNames = array => array.map(element => console.log(element.name))
 getAllNames(users)
+
+// getUserById(array, id) - функция принимает массив и id пользователя, и выводит в консоль всю информацию (весь объект) об этом пользователе
+
+const getUserById = (array, id) => array.find( element => element.id === id)
+ console.log(getUserById(users, 2))

@@ -227,3 +227,8 @@ console.log(getUsersGeo(users,1))
 /*getUsersCompany(array, id)  — функция принимает массив и id пользователя, и выводит в консоль всю информацию (весь объект) о компании этого пользователя*/
 const getUsersCompany = (array, id) => array.find(element => element.id === id)
 console.log(getUsersCompany(users, 1))
+
+/*changePhone(array, id, phone) — функция принимает массив и id пользователя, у которого должно быть изменен номер телефона, а также принимает номер на которое должен быть изменен. Функция возвращает новый массив с измененным номером.*/
+
+const changePhone = (array, id, phone) => array.map(element.id === id ? elemment.id.phone === "phone")
+console.log(changePhone(users,1, "123"))

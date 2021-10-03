@@ -214,3 +214,8 @@ const getUserById = (array, id) => array.find( element => element.id === id)
 
 const removeAddresses = array => array.filter(element => delete element.address)
 console.log(removeAddresses(users))
+
+/*deleteUser(array, id) — функция принимает массив и id пользователя, который должен быть удален и возвращает новый массив, уже без этого пользователя.*/
+
+const removeAddresses = (array, id) => array.filter(element => element.id !=id)
+console.log(removeAddresses(users, 1))
